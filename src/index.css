@@ -1,0 +1,26 @@
+/* Global reset — component-level styles live inside each JSX file */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: #060d1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-root {
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #060d1a; }
+::-webkit-scrollbar-thumb { background: rgba(34,211,238,0.2); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(34,211,238,0.4); }
